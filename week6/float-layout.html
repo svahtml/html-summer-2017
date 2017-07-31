@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Float Layout</title>
+  <style>
+    .wrapper {
+      background-color: aqua;
+      width: 800px;
+      margin: 0 auto;
+    }
+    header {
+      background-color: red;
+      height: 75px;
+    }
+    section {
+      background-color: tan;
+    }
+    section:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    nav, article {
+      float: left;
+    }
+    nav {
+      background-color: orange;
+      width: 200px;
+      height: 200px;
+    }
+    article {
+      width: 600px;
+      height: 600px;
+      background-color: yellowgreen;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    footer {
+      background-color: lightblue;
+      height: 50px;
+    }
+  </style>
+</head>
+<body>
+<!-- This is the old school way of layout out a page. -->
+
+<div class="wrapper">
+  <header>Header</header>
+  <section>
+    <nav>Nav</nav>
+    <article>Content</article>
+  </section>
+  <footer>Footer</footer>
+</div>
+
+
+
+</body>
+</html>

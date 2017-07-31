@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>pseudo class</title>
+  <style>
+
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			background-color: #c0c0c0;
+			margin: 0;
+			font: 16px arial;
+			color: #333333;
+		}
+
+		.wrapper {
+			max-width: 800px;
+			padding: 20px;
+			background-color: #ffffff;
+			margin: 0 auto;
+		}
+
+		a {
+			color: maroon;
+			text-decoration: none;
+		}
+
+		a:link {
+			color: red;
+		}
+
+		a:visited {
+			color: teal;
+		}
+
+		a:hover {
+			color: pink;
+			text-decoration: underline;
+		}
+
+		a:active {
+			color: navy;
+		}
+
+		header {
+			padding: 1em;
+			border: 1px solid black;
+			transition: all .5s;
+		}
+
+		header:hover {
+			background-color: orange;
+		}
+
+		input {
+			width: 100px;
+			border: 2px solid gray;
+			padding: 2px;
+			outline: none;
+			transition: all .5s;
+		}
+
+		input:focus {
+			width: 200px;
+			border-color: lightblue;
+		}
+  </style>
+</head>
+<body>
+
+<main class="wrapper">
+	<header>
+		<h1>Pseudo Class</h1>
+	</header>
+	<article>
+		<h2>Types of pseudo classes</h2>
+		<ul>
+			<li>link</li>
+			<li>visited</li>
+			<li>active</li>
+			<li>hover</li>
+			<li>focus</li>
+		</ul>
+
+		<p>Pseudo Class - <a href="https://www.google.com">Example link</a></p>
+
+		<h3>Adding Focus</h3>
+
+		<section>
+			<input type="text"/>
+		</section>
+
+
+	</article>
+	<footer>
+		<p>&copy;2017 SVAHTML</p>
+	</footer>
+</main>
+
+</body>
+</html>

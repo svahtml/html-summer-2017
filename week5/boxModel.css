@@ -1,0 +1,33 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #c0c0c0;
+	font: 16px arial;
+}
+
+article {
+	margin: 1em 0;
+}
+
+p {
+	margin: 0;
+}
+
+.box-model {
+	background-color: lightblue;
+	width: 340px;
+	height: 140px;
+	padding: 20px;
+	border: 10px solid lightgreen;
+	box-sizing: content-box;
+}
+
+.box-sizing {
+	background-color: lightpink;
+	width: 400px;
+	height: 200px;
+	padding: 1em;
+	border: .5em solid lightyellow;
+}

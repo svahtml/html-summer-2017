@@ -1,0 +1,76 @@
+body {
+  background-color: #c0c0c0;
+  font: 16px arial;
+}
+
+h1, h2, h3, p, ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.flex-parent {
+  background-color: slategray;
+  padding: 1em;
+  display: flex;
+  /*justify-content: space-between;*/
+  /*height: 400px;*/
+  /*align-items: center;*/
+}
+
+.flex-child {
+  background-color: black;
+  /*flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 200px;*/
+  flex: 1;
+  order: 1;
+}
+
+.flex-child a {
+  display: block;
+  padding: 1em;
+}
+
+.flex-child:first-child {
+  background-color: teal;
+  /*align-self: stretch;*/
+  flex-grow: 4;
+  order: 2;
+}
+
+.flex-child:last-child {
+  background-color: orange;
+  /*align-self: flex-end;*/
+  order: 30;
+}
+
+.flex-child:hover {
+  background-color: purple;
+}
+
+@media (max-width: 600px) {
+  .flex-parent {
+    flex-direction: column;
+  }
+  .flex-child:first-child {
+    order: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/**/

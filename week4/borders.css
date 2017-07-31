@@ -1,0 +1,33 @@
+body {
+  font: 12px arial;
+  background-color: #c0c0c0;
+  color: red;
+}
+
+div {
+  background-color: white;
+
+  /*
+  border-style: solid;
+  border-color: blue;
+  border-width: 10px;
+  */
+
+  border: 10px solid blue;
+
+}
+
+.content {
+  border-color: green;
+
+  border-bottom: 5px dotted teal;
+}
+
+li {
+  border-bottom: 1px solid black;
+  list-style-type: none;
+}
+
+li.last {
+  border-bottom: none;
+}
